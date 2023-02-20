@@ -26,7 +26,25 @@ ul.alphabetList li:hover{
     display:none;
 }
 
-.chosen{
-    background-color: red;
+.chosenFalse{
+    background-color: red !important;
     text-decoration: line-through;
+}
+
+.chosenFalse:hover{
+    background-color: red !important;
+    color: black !important;
+    cursor:auto !important;
+    
+}
+
+.chosenRight{
+    background-color: rgb(134, 207, 146) !important;
+   
+}
+
+.chosenRight:hover{
+    background-color: rgb(134, 207, 146) !important;
+    color: black !important;
+    cursor:auto !important;
 }

@@ -3,10 +3,6 @@ const wordPromise = fetch('words.txt');
 let currentWord = "";
 let currentElement;
 
-document.onclick = async function(event) {
-  currentElement = event.target;
-  console.log(currentElement);
-};
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
   }
@@ -22,7 +18,6 @@ async function chooseRandomWord(){
     let wordsArray = [];
 
   wordsArray = await fetchData().then( arr => arr);
-    console.log(wordsArray);
   let randomNum = getRandomInt(wordsArray.length);
   console.log(randomNum);
 
@@ -40,16 +35,27 @@ for(const element of currentWord){
 
 }
 
-function checkIfLetterInWord(letter){
+function checkIfLetterInWord(letter,event){
   console.log(letter);
+
+console.log(event.target);
 console.log(currentWord.indexOf(letter));
 if(currentWord.indexOf(letter) == -1){
     console.log("does not exist in word");
+    hideWord(event.target,false);
 }else{
   console.log("Does exist in word");
+  hideWord(event.target,true);
 }
 }
 
-function hideWord(){
-  currentElement.classList.add("chosen");
+function hideWord(element,check){
+  if(check){
+    element.classList.add("chosenRight");
+    element.onclick = null;
+  }else{
+    element.classList.add("chosenFalse");
+    element.onclick = null;
+  }
+
 }
