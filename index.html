@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" href="styles.css" />
+    <title>Hangman</title>
+  </head>
+  <body>
+    <h1>Hangman Game</h1>
+    <button onclick="chooseRandomWord()">Find Random Word</button>
+    <h2 id="displayWord"></h2>
+    <ul id="letterList"></ul>
+    <section id="alphabet" class="alphabetHolder hide">
+      <ul class="alphabetList">
+        <li onclick="checkIfLetterInWord('A')">A</li>
+        <li onclick="checkIfLetterInWord('B')">B</li>
+        <li onclick="checkIfLetterInWord('C')">C</li>
+        <li onclick="checkIfLetterInWord('D')">D</li>
+        <li onclick="checkIfLetterInWord('E')">E</li>
+        <li onclick="checkIfLetterInWord('F')">F</li>
+        <li onclick="checkIfLetterInWord('G')">G</li>
+        <li onclick="checkIfLetterInWord('H')">H</li>
+        <li onclick="checkIfLetterInWord('I')">I</li>
+        <li onclick="checkIfLetterInWord('J')">J</li>
+        <li onclick="checkIfLetterInWord('K')">K</li>
+        <li onclick="checkIfLetterInWord('L')">L</li>
+        <li onclick="checkIfLetterInWord('M')">M</li>
+        <li onclick="checkIfLetterInWord('N')">N</li>
+        <li onclick="checkIfLetterInWord('O')">O</li>
+        <li onclick="checkIfLetterInWord('P')">P</li>
+        <li onclick="checkIfLetterInWord('Q')">Q</li>
+        <li onclick="checkIfLetterInWord('R')">R</li>
+        <li onclick="checkIfLetterInWord('S')">S</li>
+        <li onclick="checkIfLetterInWord('T')">T</li>
+        <li onclick="checkIfLetterInWord('U')">U</li>
+        <li onclick="checkIfLetterInWord('V')">V</li>
+        <li onclick="checkIfLetterInWord('W')">W</li>
+        <li onclick="checkIfLetterInWord('X')">X</li>
+        <li onclick="checkIfLetterInWord('Y')">Y</li>
+        <li onclick="checkIfLetterInWord('Z')">Z</li>
+      </ul>
+    </section>
+  </body>
+  <script type="text/JavaScript" src="main.js"></script>
+</html>

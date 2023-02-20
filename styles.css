@@ -1,0 +1,32 @@
+body{
+    background-color: pink;
+}
+
+ul.alphabetList{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+ul.alphabetList li{
+    list-style-type: none;
+    background-color: white;
+    padding: 1rem;
+}
+
+ul.alphabetList li:hover{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+
+.hide{
+    display:none;
+}
+
+.chosen{
+    background-color: red;
+    text-decoration: line-through;
+}
