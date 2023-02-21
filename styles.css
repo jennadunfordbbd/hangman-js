@@ -46,6 +46,10 @@ ul.chosenWordList li{
     align-content: center;
 } 
 
+.g{
+    transform: rotate(45deg);
+}
+
 ul.chosenWordList li:hover{
     cursor:default;
 }
