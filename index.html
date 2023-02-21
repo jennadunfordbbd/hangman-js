@@ -10,38 +10,26 @@
   <body>
     <h1>Hangman Game</h1>
     <button onclick="chooseRandomWord()">Find Random Word</button>
-    <h2 id="displayWord"></h2>
-    <ul id="letterList"></ul>
+    <ul id="letterList" class="chosenWordList"></ul>
     <section id="alphabet" class="alphabetHolder hide">
-      <ul class="alphabetList">
-        <li onclick="checkIfLetterInWord('A',event)">A</li>
-        <li onclick="checkIfLetterInWord('B' ,event)">B</li>
-        <li onclick="checkIfLetterInWord('C',event)">C</li>
-        <li onclick="checkIfLetterInWord('D',event)">D</li>
-        <li onclick="checkIfLetterInWord('E',event)">E</li>
-        <li onclick="checkIfLetterInWord('F',event)">F</li>
-        <li onclick="checkIfLetterInWord('G',event)">G</li>
-        <li onclick="checkIfLetterInWord('H',event)">H</li>
-        <li onclick="checkIfLetterInWord('I',event)">I</li>
-        <li onclick="checkIfLetterInWord('J',event)">J</li>
-        <li onclick="checkIfLetterInWord('K',event)">K</li>
-        <li onclick="checkIfLetterInWord('L',event)">L</li>
-        <li onclick="checkIfLetterInWord('M',event)">M</li>
-        <li onclick="checkIfLetterInWord('N',event)">N</li>
-        <li onclick="checkIfLetterInWord('O',event)">O</li>
-        <li onclick="checkIfLetterInWord('P',event)">P</li>
-        <li onclick="checkIfLetterInWord('Q',event)">Q</li>
-        <li onclick="checkIfLetterInWord('R',event)">R</li>
-        <li onclick="checkIfLetterInWord('S',event)">S</li>
-        <li onclick="checkIfLetterInWord('T',event)">T</li>
-        <li onclick="checkIfLetterInWord('U',event)">U</li>
-        <li onclick="checkIfLetterInWord('V',event)">V</li>
-        <li onclick="checkIfLetterInWord('W',event)">W</li>
-        <li onclick="checkIfLetterInWord('X',event)">X</li>
-        <li onclick="checkIfLetterInWord('Y',event)">Y</li>
-        <li onclick="checkIfLetterInWord('Z',event)">Z</li>
+      <ul class="alphabetList" id="alphabetL">
       </ul>
     </section>
+    <section>
+      <h2 id="triesCounter">Tries:0/7</h2>
+      <button id="playAgainButton" onclick="resetAll()" class="hide">Play again?</button>
+    </section>
+    <section class="man">
+      <svg class="hat"></svg>
+      <svg class="head"><circle  cx="100" cy="100" r="50" fill="none" stroke="black" stroke-width="2"/></svg>
+      <svg class="body"><rect x="75" y="2" width="50" height="100" rx="10" ry="10" fill="none" stroke="black" stroke-width="2" /></svg>
+      <svg class="leftArm">  <line x1="75" x2="0" y1="-120" y2="-40" stroke="black" stroke-width="2"/></svg>
+      <svg class="rightArm">  <line x1="150" x2="75" y1="0" y2="-120" stroke="black" stroke-width="2"/> </svg>
+      <svg class="leftLeg"></svg>
+      <svg class="rightLeg"></svg>
+
+    </section>
+    
   </body>
   <script type="text/JavaScript" src="main.js"></script>
 </html>
